@@ -41,6 +41,6 @@ app.use((error, req, res, next) => {
 
 app.listen(process.env.PORT || 4000, () => {
   console.log('MONGO_URL from Env:', process.env.MONGO_URL ? 'Exists' : 'Missing');
-  console.log('JWT_SECRET from Env:', process.env.JWT_SECRET ? 'Exists' : 'Missing');
+  console.log('JWT_SECRET from Env:', process.env.JWT_SECRET_KEY ? 'Exists' : 'Missing');
   console.log('Server is running on port 4000');
 });
